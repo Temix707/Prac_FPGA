@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivado_project/PR_VER/SystemOnChip/SystemOnChip/SystemOnChip.sim/sim_1/synth/func/xsim/tb_kuznechik_cipher_apb_wrapper_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cipher
+INFO: [VRFC 10-311] analyzing module kuznechik_cipher_apb_wrapper
+INFO: [VRFC 10-311] analyzing module glbl

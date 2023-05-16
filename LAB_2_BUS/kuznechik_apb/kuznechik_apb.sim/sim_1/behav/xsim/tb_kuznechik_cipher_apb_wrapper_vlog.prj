@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../src/kuznechik_cipher_apb_wrapper_pkg.sv" \
+"../../../../src/kuznechik_cipher_apb_wrapper.sv" \
+"../../../../src/tb_kuznechik_cipher_apb_wrapper_2.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

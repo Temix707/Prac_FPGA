@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_kuznechik_cipher_apb_wrapper_func_synth/xsimk.exe -simmode gui -wdb tb_kuznechik_cipher_apb_wrapper_func_synth.wdb -simrunnum 0 -socket 51754
+Design successfully loaded
+Design Loading Memory Usage: 8192 KB (Peak: 8192 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 10596 KB (Peak: 10596 KB)
+Simulation CPU Usage: 436 ms

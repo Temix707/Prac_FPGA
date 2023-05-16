@@ -1,0 +1,9 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Vivado_project/PR_VER/LAB_1/pr1/project_3.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Vivado_project/PR_VER/LAB_1/pr1/project_3.srcs/sim_1/new/tb_kuznechik_cipher_apb_wrapper.sv,1681741692,systemVerilog,,,,tb_kuznechik_cipher_apb_wrapper,,,,,,,,
+C:/Vivado_project/PR_VER/LAB_1/pr1/project_3.srcs/sources_1/new/kuznechik_cipher.sv,1681741402,systemVerilog,,C:/Vivado_project/PR_VER/LAB_1/pr1/project_3.srcs/sources_1/new/kuznechik_cipher_apb_wrapper_pkg.sv,,kuznechik_cipher,,,,,,,,
+C:/Vivado_project/PR_VER/LAB_1/pr1/project_3.srcs/sources_1/new/kuznechik_cipher_apb_wrapper.sv,1681748444,systemVerilog,,C:/Vivado_project/PR_VER/LAB_1/pr1/project_3.srcs/sim_1/new/tb_kuznechik_cipher_apb_wrapper.sv,,kuznechik_cipher_apb_wrapper,,,,,,,,
+C:/Vivado_project/PR_VER/LAB_1/pr1/project_3.srcs/sources_1/new/kuznechik_cipher_apb_wrapper_pkg.sv,1681741588,systemVerilog,C:/Vivado_project/PR_VER/LAB_1/pr1/project_3.srcs/sim_1/new/tb_kuznechik_cipher_apb_wrapper.sv;C:/Vivado_project/PR_VER/LAB_1/pr1/project_3.srcs/sources_1/new/kuznechik_cipher_apb_wrapper.sv,C:/Vivado_project/PR_VER/LAB_1/pr1/project_3.srcs/sources_1/new/kuznechik_cipher_apb_wrapper.sv,,kuznechik_cipher_apb_wrapper_pkg,,,,,,,,
