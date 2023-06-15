@@ -1,0 +1,415 @@
+
+*** Running vivado
+    with args -log temp_sens_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source temp_sens_top.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source temp_sens_top.tcl -notrace
+Command: synth_design -top temp_sens_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19488 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 786.355 ; gain = 235.070
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'temp_sens_top' [C:/Design_projects/PR_VER/Coursework/Temperature Sensor/src/rtl/sv/temp_sens_top.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_200kHz' [C:/Design_projects/PR_VER/Coursework/Temperature Sensor/src/rtl/sv/clk_200kHz.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'clk_200kHz' (1#1) [C:/Design_projects/PR_VER/Coursework/Temperature Sensor/src/rtl/sv/clk_200kHz.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'i2c' [C:/Design_projects/PR_VER/Coursework/Temperature Sensor/src/rtl/sv/i2c.sv:1]
+	Parameter sensor_address_plus_read bound to: 8'b10010111 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Design_projects/PR_VER/Coursework/Temperature Sensor/src/rtl/sv/i2c.sv:87]
+WARNING: [Synth 8-5788] Register counter_reg in module i2c is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Design_projects/PR_VER/Coursework/Temperature Sensor/src/rtl/sv/i2c.sv:19]
+WARNING: [Synth 8-5788] Register clk_reg_reg in module i2c is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Design_projects/PR_VER/Coursework/Temperature Sensor/src/rtl/sv/i2c.sv:20]
+WARNING: [Synth 8-5788] Register o_bit_reg in module i2c is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Design_projects/PR_VER/Coursework/Temperature Sensor/src/rtl/sv/i2c.sv:94]
+WARNING: [Synth 8-5788] Register tMSB_reg in module i2c is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Design_projects/PR_VER/Coursework/Temperature Sensor/src/rtl/sv/i2c.sv:143]
+WARNING: [Synth 8-5788] Register tLSB_reg in module i2c is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Design_projects/PR_VER/Coursework/Temperature Sensor/src/rtl/sv/i2c.sv:196]
+INFO: [Synth 8-6155] done synthesizing module 'i2c' (2#1) [C:/Design_projects/PR_VER/Coursework/Temperature Sensor/src/rtl/sv/i2c.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'seg7' [C:/Design_projects/PR_VER/Coursework/Temperature Sensor/src/rtl/sv/seg7.sv:1]
+	Parameter ZERO bound to: 7'b0000001 
+	Parameter ONE bound to: 7'b1001111 
+	Parameter TWO bound to: 7'b0010010 
+	Parameter THREE bound to: 7'b0000110 
+	Parameter FOUR bound to: 7'b1001100 
+	Parameter FIVE bound to: 7'b0100100 
+	Parameter SIX bound to: 7'b0100000 
+	Parameter SEVEN bound to: 7'b0001111 
+	Parameter EIGHT bound to: 7'b0000000 
+	Parameter NINE bound to: 7'b0000100 
+	Parameter DEG bound to: 7'b0011100 
+	Parameter C bound to: 7'b0110001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Design_projects/PR_VER/Coursework/Temperature Sensor/src/rtl/sv/seg7.sv:61]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Design_projects/PR_VER/Coursework/Temperature Sensor/src/rtl/sv/seg7.sv:76]
+INFO: [Synth 8-6155] done synthesizing module 'seg7' (3#1) [C:/Design_projects/PR_VER/Coursework/Temperature Sensor/src/rtl/sv/seg7.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'temp_sens_top' (4#1) [C:/Design_projects/PR_VER/Coursework/Temperature Sensor/src/rtl/sv/temp_sens_top.sv:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 859.191 ; gain = 307.906
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 859.191 ; gain = 307.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 859.191 ; gain = 307.906
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 859.191 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Design_projects/PR_VER/Coursework/Temperature Sensor/src/xdc/const_temp_sensor.xdc]
+Finished Parsing XDC File [C:/Design_projects/PR_VER/Coursework/Temperature Sensor/src/xdc/const_temp_sensor.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Design_projects/PR_VER/Coursework/Temperature Sensor/src/xdc/const_temp_sensor.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/temp_sens_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/temp_sens_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 941.953 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 941.953 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 941.953 ; gain = 390.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 941.953 ; gain = 390.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 941.953 ; gain = 390.668
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'i2c'
+INFO: [Synth 8-5546] ROM "tLSB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tMSB" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                POWER_UP |                            00000 |                            00000
+                   START |                            00001 |                            00001
+              SEND_ADDR6 |                            01101 |                            00010
+              SEND_ADDR5 |                            01010 |                            00011
+              SEND_ADDR4 |                            01011 |                            00100
+              SEND_ADDR3 |                            11100 |                            00101
+              SEND_ADDR2 |                            11010 |                            00110
+              SEND_ADDR1 |                            10111 |                            00111
+              SEND_ADDR0 |                            11000 |                            01000
+                 SEND_RW |                            11011 |                            01001
+                 REC_ACK |                            10110 |                            01010
+                REC_MSB7 |                            10100 |                            01011
+                REC_MSB6 |                            00110 |                            01100
+                REC_MSB5 |                            00101 |                            01101
+                REC_MSB4 |                            00010 |                            01110
+                REC_MSB3 |                            00011 |                            01111
+                REC_MSB2 |                            01111 |                            10000
+                REC_MSB1 |                            01100 |                            10001
+                REC_MSB0 |                            01001 |                            10010
+                SEND_ACK |                            00111 |                            10011
+                REC_LSB7 |                            01000 |                            10100
+                REC_LSB6 |                            11001 |                            10101
+                REC_LSB5 |                            10011 |                            10110
+                REC_LSB4 |                            10001 |                            10111
+                REC_LSB3 |                            10010 |                            11000
+                REC_LSB2 |                            10101 |                            11001
+                REC_LSB1 |                            10000 |                            11010
+                REC_LSB0 |                            01110 |                            11011
+                    NACK |                            00100 |                            11100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'i2c'
+WARNING: [Synth 8-327] inferring latch for variable 'SEG_o_reg' [C:/Design_projects/PR_VER/Coursework/Temperature Sensor/src/rtl/sv/seg7.sv:56]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 941.953 ; gain = 390.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	  29 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	  29 Input      8 Bit        Muxes := 4     
+	  14 Input      7 Bit        Muxes := 1     
+	  29 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	  29 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_200kHz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module i2c 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	  29 Input     12 Bit        Muxes := 1     
+	  29 Input      8 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 2     
+	  29 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  29 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 6     
+Module seg7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	  14 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 941.953 ; gain = 390.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 941.953 ; gain = 390.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 956.125 ; gain = 404.840
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 960.371 ; gain = 409.086
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 966.152 ; gain = 414.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 966.152 ; gain = 414.867
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 966.152 ; gain = 414.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 966.152 ; gain = 414.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 966.152 ; gain = 414.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 966.152 ; gain = 414.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     4|
+|4     |LUT2   |    18|
+|5     |LUT3   |    11|
+|6     |LUT4   |    13|
+|7     |LUT5   |    19|
+|8     |LUT6   |   109|
+|9     |MUXF7  |    22|
+|10    |MUXF8  |     7|
+|11    |FDCE   |    15|
+|12    |FDPE   |     7|
+|13    |FDRE   |    45|
+|14    |LD     |     7|
+|15    |IBUF   |     2|
+|16    |IOBUF  |     1|
+|17    |OBUF   |    24|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------+-----------+------+
+|      |Instance     |Module     |Cells |
++------+-------------+-----------+------+
+|1     |top          |           |   313|
+|2     |  clkgen     |clk_200kHz |    22|
+|3     |  interf_i2c |i2c        |   220|
+|4     |  seg        |seg7       |    42|
++------+-------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 966.152 ; gain = 414.867
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 966.152 ; gain = 332.105
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 966.152 ; gain = 414.867
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 977.227 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 977.457 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  LD => LDCE: 7 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 977.457 ; gain = 679.586
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 977.457 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Design_projects/PR_VER/Coursework/Temperature Sensor/Temperature Sensor.runs/synth_1/temp_sens_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file temp_sens_top_utilization_synth.rpt -pb temp_sens_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 12 17:49:23 2023...
