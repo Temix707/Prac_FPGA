@@ -1,7 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado_project/PR_VER/LAB_2_BUS/kuznechik_apb/src/kuznechik_cipher_apb_wrapper_pkg.sv" into library xil_defaultlib
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado_project/PR_VER/LAB_2_BUS/kuznechik_apb/src/kuznechik_cipher_apb_wrapper.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module kuznechik_cipher_apb_wrapper
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivado_project/PR_VER/LAB_2_BUS/kuznechik_apb/src/tb_kuznechik_cipher_apb_wrapper_2.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_kuznechik_cipher_apb_wrapper
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivado_project/PR_VER/LAB_2_BUS/kuznechik_apb/kuznechik_apb.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl

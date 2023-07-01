@@ -1,8 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Design_projects/PR_VER/LAB_2_BUS/CRC8/rtl/crc8.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module crc8
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Design_projects/PR_VER/LAB_2_BUS/CRC8/rtl/wrapper_crc8.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module wrapper_crc8
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Design_projects/PR_VER/LAB_2_BUS/CRC8/tb/src8_tb.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module src8_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Design_projects/PR_VER/LAB_2_BUS/CRC8/CRC8.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl

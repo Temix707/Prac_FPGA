@@ -1,7 +1,0 @@
-0.6
-2019.2
-Nov  6 2019
-21:57:16
-C:/rtl/project_3/project_3.sim/sim_1/synth/func/xsim/tb_kuznechik_cipher_apb_wrapper_func_synth.v,1681742024,verilog,,,,glbl;kuznechik_cipher;kuznechik_cipher_apb_wrapper,,,,,,,,
-C:/rtl/project_3/project_3.srcs/sim_1/new/tb_kuznechik_cipher_apb_wrapper.sv,1681741691,systemVerilog,,,,tb_kuznechik_cipher_apb_wrapper,,,,,,,,
-C:/rtl/project_3/project_3.srcs/sources_1/new/kuznechik_cipher_apb_wrapper_pkg.sv,1681741586,systemVerilog,C:/rtl/project_3/project_3.srcs/sim_1/new/tb_kuznechik_cipher_apb_wrapper.sv,C:/rtl/project_3/project_3.srcs/sim_1/new/tb_kuznechik_cipher_apb_wrapper.sv,,kuznechik_cipher_apb_wrapper_pkg,,,,,,,,
